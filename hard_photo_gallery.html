@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    gap: 8px;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+.photo.photo1{
+    background-color: orangered;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.photo.photo2{
+    background-color: lightblue;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.photo.photo3{
+    background-color: lightgreen;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.photo.photo4{
+    background-color: yellow;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.photo.photo5{
+    background-color: purple;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.photo.photo6{
+    background-color: lightseagreen;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.photo.photo7{
+    background-color: orange;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+.photo.photo8{
+    background-color: rgb(243, 24, 203);
+    grid-column: span 3;
+    grid-row: span 1;
+}
+.photo.photo9{
+    background-color: grey;
+    grid-row:  3/5;
+    grid-column: 4;
+}
+</style>
+<body>
+    <div class="gallery-grid">
+        <div class="photo photo1">Photo 1</div>
+        <div class="photo photo2">Photo 2</div>
+        <div class="photo photo3">Photo 3</div>
+        <div class="photo photo4">Photo 4</div>
+        <div class="photo photo5">Photo 5</div>
+        <div class="photo photo6">Photo 6</div>
+        <div class="photo photo7">Photo 7</div>
+        <div class="photo photo8">Photo 8</div>
+        <div class="photo photo9">Photo 9</div>
+    </div>
+
+
+</body>
+</html>
